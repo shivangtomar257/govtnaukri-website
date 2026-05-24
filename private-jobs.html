@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Private Jobs 2026 | IT, MNC, Corporate Jobs - Fresher & Experienced</title>
+    <meta name="description" content="Find latest private sector jobs in India 2026. IT jobs, MNC jobs, corporate careers for freshers and experienced professionals. Apply for TCS, Infosys, Wipro, Amazon, Flipkart jobs.">
+    <meta name="keywords" content="private jobs, IT jobs, MNC jobs, fresher jobs, experienced jobs, corporate jobs, software jobs, private sector careers">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://yourdomain.com/private-jobs.html">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .page-header { background: linear-gradient(135deg, #0f172a, #1e293b); color: var(--white); padding: 2.5rem 1rem; }
+        .page-header-content { max-width: 1280px; margin: 0 auto; }
+        .page-header h1 { font-size: 2rem; font-weight: 800; margin-bottom: 0.5rem; }
+        .page-header p { opacity: 0.9; font-size: 1.0625rem; }
+        .exp-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1.25rem; margin-bottom: 2rem; }
+        .exp-card { background: var(--white); border: 2px solid var(--gray-100); border-radius: var(--radius-lg); padding: 1.5rem; text-align: center; transition: var(--transition); cursor: pointer; }
+        .exp-card:hover { border-color: var(--accent); transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+        .exp-card .exp-icon { width: 64px; height: 64px; background: linear-gradient(135deg, var(--accent), #059669); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.75rem; margin: 0 auto 1rem; color: var(--white); }
+        .exp-card h3 { font-size: 1.0625rem; font-weight: 700; margin-bottom: 0.375rem; }
+        .exp-card p { font-size: 0.8125rem; color: var(--gray-500); }
+        .exp-card .exp-count { display: inline-block; background: var(--accent); color: var(--white); font-size: 0.75rem; font-weight: 700; padding: 0.25rem 0.75rem; border-radius: var(--radius-xl); margin-top: 0.75rem; }
+        .two-col { display: grid; grid-template-columns: 1fr 300px; gap: 2rem; max-width: 1280px; margin: 0 auto; padding: 2rem 1rem; }
+        @media (max-width: 1024px) { .two-col { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-top">
+            <div class="header-top-container">
+                <span>📧 contact@sarkarinaukrihub.com</span>
+                <span>📞 Helpline: 1800-123-4567</span>
+            </div>
+        </div>
+        <div class="header-main">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">🏛️</div>
+                <span>Sarkari Naukri Hub</span>
+            </a>
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Search private jobs...">
+                <button onclick="performSearch()">🔍</button>
+            </div>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="government-jobs.html">Government Jobs</a>
+                <a href="private-jobs.html" class="active">Private Jobs</a>
+                <a href="government-jobs.html?category=results">Results</a>
+                <a href="government-jobs.html?category=admitcard">Admit Card</a>
+            </nav>
+            <button class="mobile-menu-btn">☰</button>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="page-header-content">
+            <div class="breadcrumb" style="color: rgba(255,255,255,0.8); margin-bottom: 1rem;">
+                <a href="index.html" style="color: var(--secondary);">Home</a>
+                <span class="breadcrumb-separator">›</span>
+                <span class="breadcrumb-current" style="color: var(--white);">Private Jobs</span>
+            </div>
+            <h1>💼 Private Sector Jobs 2026</h1>
+            <p>Find IT jobs, MNC careers, corporate opportunities for freshers and experienced professionals. TCS, Infosys, Wipro, Amazon, Flipkart & more.</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="two-col">
+        <div class="main-content">
+            <!-- Experience Levels -->
+            <section class="section" style="padding: 0; margin-bottom: 2rem;">
+                <div class="section-header" style="text-align: left;">
+                    <div class="section-badge" style="display: inline-flex;">📊 Experience Wise</div>
+                    <h2 style="font-size: 1.5rem;">Find Jobs by Experience</h2>
+                    <p>Select your experience level to view matching private sector opportunities.</p>
+                </div>
+                <div class="exp-grid" id="exp-grid"></div>
+            </section>
+
+            <!-- AdSense -->
+            <div class="adsense-slot leaderboard">📢 AdSense Leaderboard Ad Slot (728x90)</div>
+
+            <!-- Filter Bar -->
+            <div class="filter-bar">
+                <div class="filter-group">
+                    <label>Experience</label>
+                    <select id="filter-exp" onchange="applyFilters()">
+                        <option value="">All Experience</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Job Type</label>
+                    <select id="filter-jobtype" onchange="applyFilters()">
+                        <option value="">All Types</option>
+                        <option value="fulltime">Full Time</option>
+                        <option value="parttime">Part Time</option>
+                        <option value="contract">Contract</option>
+                        <option value="internship">Internship</option>
+                        <option value="remote">Remote / WFH</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Location</label>
+                    <select id="filter-location" onchange="applyFilters()">
+                        <option value="">All Locations</option>
+                        <option value="Bangalore">Bangalore</option>
+                        <option value="Hyderabad">Hyderabad</option>
+                        <option value="Chennai">Chennai</option>
+                        <option value="Pune">Pune</option>
+                        <option value="Mumbai">Mumbai</option>
+                        <option value="Delhi">Delhi NCR</option>
+                        <option value="Noida">Noida</option>
+                        <option value="Gurgaon">Gurgaon</option>
+                    </select>
+                </div>
+                <button class="filter-btn" onclick="resetFilters()">Reset</button>
+            </div>
+
+            <!-- Tabs -->
+            <div class="tabs">
+                <button class="tab active" onclick="switchTab('all')">All Private Jobs</button>
+                <button class="tab" onclick="switchTab('it')">IT / Software</button>
+                <button class="tab" onclick="switchTab('management')">Management</button>
+                <button class="tab" onclick="switchTab('accounting')">Accounting / CA</button>
+                <button class="tab" onclick="switchTab('medical')">Medical / Nursing</button>
+                <button class="tab" onclick="switchTab('legal')">Legal</button>
+            </div>
+
+            <!-- Jobs List -->
+            <div id="jobs-container"></div>
+
+            <!-- Pagination -->
+            <div class="pagination" id="pagination">
+                <button disabled>« Prev</button>
+                <button class="active">1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>Next »</button>
+            </div>
+
+            <!-- AdSense -->
+            <div class="adsense-slot medium-rectangle">📢 AdSense Medium Rectangle Ad Slot (300x250)</div>
+        </div>
+
+        <!-- Sidebar -->
+        <aside style="display: flex; flex-direction: column; gap: 1.5rem;">
+            <div class="adsense-slot medium-rectangle" style="min-height: 250px;">📢 AdSense Ad (300x250)</div>
+
+            <div class="sidebar-card">
+                <h3>🏢 Top Companies Hiring</h3>
+                <ul style="list-style: none;">
+                    <li style="padding: 0.625rem 0; border-bottom: 1px solid var(--gray-100); display: flex; justify-content: space-between; font-size: 0.9375rem;">
+                        <span>TCS</span><span style="color: var(--accent); font-weight: 700;">500+</span>
+                    </li>
+                    <li style="padding: 0.625rem 0; border-bottom: 1px solid var(--gray-100); display: flex; justify-content: space-between; font-size: 0.9375rem;">
+                        <span>Infosys</span><span style="color: var(--accent); font-weight: 700;">200+</span>
+                    </li>
+                    <li style="padding: 0.625rem 0; border-bottom: 1px solid var(--gray-100); display: flex; justify-content: space-between; font-size: 0.9375rem;">
+                        <span>Wipro</span><span style="color: var(--accent); font-weight: 700;">75+</span>
+                    </li>
+                    <li style="padding: 0.625rem 0; border-bottom: 1px solid var(--gray-100); display: flex; justify-content: space-between; font-size: 0.9375rem;">
+                        <span>Amazon</span><span style="color: var(--accent); font-weight: 700;">8+</span>
+                    </li>
+                    <li style="padding: 0.625rem 0; border-bottom: 1px solid var(--gray-100); display: flex; justify-content: space-between; font-size: 0.9375rem;">
+                        <span>Flipkart</span><span style="color: var(--accent); font-weight: 700;">50+</span>
+                    </li>
+                    <li style="padding: 0.625rem 0; border-bottom: 1px solid var(--gray-100); display: flex; justify-content: space-between; font-size: 0.9375rem;">
+                        <span>HCL</span><span style="color: var(--accent); font-weight: 700;">75+</span>
+                    </li>
+                    <li style="padding: 0.625rem 0; display: flex; justify-content: space-between; font-size: 0.9375rem;">
+                        <span>Deloitte</span><span style="color: var(--accent); font-weight: 700;">100+</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="adsense-slot medium-rectangle" style="min-height: 250px;">📢 AdSense Ad (300x250)</div>
+
+            <div class="sidebar-card">
+                <h3>📈 Salary Trends</h3>
+                <ul style="list-style: none;">
+                    <li style="padding: 0.625rem 0; border-bottom: 1px solid var(--gray-100); font-size: 0.9375rem;">
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 0.25rem;">
+                            <span>Fresher (0 yrs)</span><span style="font-weight: 700;">₹3-6 LPA</span>
+                        </div>
+                        <div style="background: var(--gray-100); height: 6px; border-radius: 3px; overflow: hidden;">
+                            <div style="width: 30%; height: 100%; background: var(--accent); border-radius: 3px;"></div>
+                        </div>
+                    </li>
+                    <li style="padding: 0.625rem 0; border-bottom: 1px solid var(--gray-100); font-size: 0.9375rem;">
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 0.25rem;">
+                            <span>1-3 Years</span><span style="font-weight: 700;">₹5-12 LPA</span>
+                        </div>
+                        <div style="background: var(--gray-100); height: 6px; border-radius: 3px; overflow: hidden;">
+                            <div style="width: 50%; height: 100%; background: var(--primary-light); border-radius: 3px;"></div>
+                        </div>
+                    </li>
+                    <li style="padding: 0.625rem 0; border-bottom: 1px solid var(--gray-100); font-size: 0.9375rem;">
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 0.25rem;">
+                            <span>3-5 Years</span><span style="font-weight: 700;">₹10-20 LPA</span>
+                        </div>
+                        <div style="background: var(--gray-100); height: 6px; border-radius: 3px; overflow: hidden;">
+                            <div style="width: 70%; height: 100%; background: var(--primary); border-radius: 3px;"></div>
+                        </div>
+                    </li>
+                    <li style="padding: 0.625rem 0; border-bottom: 1px solid var(--gray-100); font-size: 0.9375rem;">
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 0.25rem;">
+                            <span>5-8 Years</span><span style="font-weight: 700;">₹20-40 LPA</span>
+                        </div>
+                        <div style="background: var(--gray-100); height: 6px; border-radius: 3px; overflow: hidden;">
+                            <div style="width: 85%; height: 100%; background: var(--secondary); border-radius: 3px;"></div>
+                        </div>
+                    </li>
+                    <li style="padding: 0.625rem 0; font-size: 0.9375rem;">
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 0.25rem;">
+                            <span>8+ Years</span><span style="font-weight: 700;">₹40+ LPA</span>
+                        </div>
+                        <div style="background: var(--gray-100); height: 6px; border-radius: 3px; overflow: hidden;">
+                            <div style="width: 100%; height: 100%; background: var(--secondary-dark); border-radius: 3px;"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="adsense-slot skyscraper" style="min-height: 600px;">📢 AdSense Skyscraper (160x600)</div>
+        </aside>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h3>🏛️ Sarkari Naukri Hub</h3>
+                <p>India's most trusted platform for Government and Private job notifications.</p>
+            </div>
+            <div class="footer-column">
+                <h4>Government Jobs</h4>
+                <ul>
+                    <li><a href="government-jobs.html?tab=states">State Wise</a></li>
+                    <li><a href="government-jobs.html?tab=central">Central Govt</a></li>
+                    <li><a href="government-jobs.html?tab=education">Education Wise</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Private Jobs</h4>
+                <ul>
+                    <li><a href="private-jobs.html">All Private Jobs</a></li>
+                    <li><a href="private-jobs.html?exp=fresher">Fresher</a></li>
+                    <li><a href="private-jobs.html?exp=1-3">Experienced</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="#">Results</a></li>
+                    <li><a href="#">Admit Cards</a></li>
+                    <li><a href="#">Syllabus</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2026 Sarkari Naukri Hub. All rights reserved.</span>
+        </div>
+    </footer>
+
+    <button class="scroll-top">↑</button>
+
+    <script src="js/data.js"></script>
+    <script>
+        // Populate experience dropdown
+        const expSelect = document.getElementById('filter-exp');
+        EXPERIENCE_LEVELS.forEach(e => {
+            expSelect.innerHTML += `<option value="${e.id}">${e.name}</option>`;
+        });
+
+        // Render experience cards
+        const expGrid = document.getElementById('exp-grid');
+        EXPERIENCE_LEVELS.forEach(exp => {
+            expGrid.innerHTML += `
+                <a href="private-jobs.html?experience=${exp.id}" class="exp-card">
+                    <div class="exp-icon">${exp.icon}</div>
+                    <h3>${exp.name}</h3>
+                    <p>Private sector opportunities</p>
+                    <span class="exp-count">${exp.count} Jobs</span>
+                </a>
+            `;
+        });
+
+        // URL Params
+        const urlParams = new URLSearchParams(window.location.search);
+        const expFilter = urlParams.get('experience');
+        const searchQuery = urlParams.get('search');
+        let currentTab = 'all';
+
+        if (expFilter) {
+            document.getElementById('filter-exp').value = expFilter;
+        }
+        if (searchQuery) {
+            document.getElementById('search-input').value = searchQuery;
+        }
+
+        function switchTab(tab) {
+            currentTab = tab;
+            document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+            document.querySelector(`.tab[onclick="switchTab('${tab}')"]`).classList.add('active');
+            renderJobs();
+        }
+
+        function renderJobs() {
+            const container = document.getElementById('jobs-container');
+            let jobs = JOBS_DB.filter(j => j.type === 'private');
+
+            // Apply tab filter
+            if (currentTab !== 'all') {
+                const categoryMap = {
+                    'it': ['it', 'software'],
+                    'management': ['management'],
+                    'accounting': ['accounting'],
+                    'medical': ['medical'],
+                    'legal': ['lawyer']
+                };
+                const allowed = categoryMap[currentTab] || [];
+                jobs = jobs.filter(j => allowed.includes(j.category));
+            }
+
+            // Apply dropdown filters
+            const exp = document.getElementById('filter-exp').value;
+            const location = document.getElementById('filter-location').value;
+            const search = document.getElementById('search-input').value;
+
+            if (exp) jobs = jobs.filter(j => j.experience === exp);
+            if (location) jobs = jobs.filter(j => j.location.toLowerCase().includes(location.toLowerCase()));
+            if (search) {
+                const q = search.toLowerCase();
+                jobs = jobs.filter(j => j.title.toLowerCase().includes(q) || j.org.toLowerCase().includes(q));
+            }
+
+            if (jobs.length === 0) {
+                container.innerHTML = renderEmptyState('No private jobs found matching your criteria.');
+            } else {
+                container.innerHTML = `
+                    <div style="margin-bottom: 1rem; color: var(--gray-500); font-size: 0.9375rem;">
+                        Showing <strong>${jobs.length}</strong> private sector jobs
+                    </div>
+                    <div class="jobs-grid">${jobs.map(j => renderJobCard(j)).join('')}</div>
+                `;
+            }
+        }
+
+        function applyFilters() {
+            renderJobs();
+        }
+
+        function resetFilters() {
+            document.getElementById('filter-exp').value = '';
+            document.getElementById('filter-jobtype').value = '';
+            document.getElementById('filter-location').value = '';
+            document.getElementById('search-input').value = '';
+            currentTab = 'all';
+            document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+            document.querySelector('.tab').classList.add('active');
+            renderJobs();
+        }
+
+        function performSearch() {
+            renderJobs();
+        }
+
+        // Initial render
+        renderJobs();
+    </script>
+</body>
+</html>
